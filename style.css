@@ -57,10 +57,12 @@ h1 {
     justify-content: space-between;
 }
 
-.pass-btn {
+#pass-btn-one,
+#pass-btn-two {
     width: 210px;
     height: 40px;
     background: #273549;
     border-radius: 6px;
     border-style: none;
+    color: white;
 }
