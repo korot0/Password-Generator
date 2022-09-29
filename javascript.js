@@ -12,3 +12,9 @@ function generatePasswords() {
         passTwo.textContent += characters[secondPass];
     }
 }
+
+function passwords () {
+    passOne.textContent = ''
+    passTwo.textContent = ''
+    generatePasswords()
+}
