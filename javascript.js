@@ -1,8 +1,16 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
-const genPassBtn = document.getElementById("gen-pass-btn");
-const passOne = document.getElementById("pass-one");
-const passTwo = document.getElementById("pass-two");
+const genPassBtn = document.getElementById('gen-pass-btn');
+const passOne = document.getElementById('pass-one');
+const passTwo = document.getElementById('pass-two');
+
+//Slider password length
+let sliderEl = document.getElementById('length-input-el')
+let sliderOutputEl = document.getElementById('slider-output-el');
+sliderOutputEl.innerHTML = sliderEl.value;
+sliderEl.oninput = function() {
+    sliderOutputEl.innerHTML = this.value;
+}
 
 //Generate password
 function generatePasswords() {

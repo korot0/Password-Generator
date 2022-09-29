@@ -12,7 +12,7 @@ Stretch goals
 - Toggle "symbols" and "numbers" on/off
 - Create dark/light theme
 
-<!-- //Generate passwords button
+//Generate passwords button
 function generatePasswords() {
     for (let i = 0; i < 15; i++) {
         // (let i = 1; i <= 15; i++) <<same thing | for loops count the amount of times you want the code to run
@@ -24,4 +24,9 @@ function generatePasswords() {
         passTwo.textContent += characters[secondPass];
         //All we are doing here is giving passOne and Two the returned random values from the variables above and then adding the rest of the random characters until it completes 15 laps of code as declared in the for loop.
     }
-} -->
+}
+
+// document.getElementById("length-input-el").defaultValue = "15"; <-- Sets the default value of input field.
+
+<!-- oninput="this.nextElementSibling.value = this.value"
+<output>15</output> --> Displays the value of slider

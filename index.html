@@ -14,8 +14,10 @@
             <div id="sub-header">Never use an insecure password again.</div>
         </div>
         <div id="item-two">
-            <input type="text" id="length-input-el" placeholder="Password Length" maxlength="">
+            <!-- <input type="number" id="length-input-el" placeholder="Password Length" value="15" min="8" max="100"> -->
             <button id="gen-pass-btn" onclick="passwords()">Generate</button>
+            <input type="range" id="length-input-el" value="15" min="8" max="100">
+            <p>Password Length: <span id="slider-output-el"></span></p>
         </div>
         <hr>
         <div id="item-three">
