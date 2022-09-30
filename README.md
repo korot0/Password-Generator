@@ -30,3 +30,5 @@ function generatePasswords() {
 
 <!-- oninput="this.nextElementSibling.value = this.value"
 <output>15</output> --> Displays the value of slider
+
+<!-- <input type="number" id="length-input-el" placeholder="Password Length" value="15" min="8" max="100"> -->
