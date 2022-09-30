@@ -7,7 +7,7 @@ Req.
 <!-- - Each password should be 15 characters long -->
 
 Stretch goals
-- Ability to set password length (min 8, max 100)
+<!-- - Ability to set password length (min 8, max 100) -->
 - Add "copy on click" feature
 - Toggle "symbols" and "numbers" on/off
 - Create dark/light theme

@@ -106,4 +106,7 @@ h1 {
     border-radius: 6px;
     border-style: none;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

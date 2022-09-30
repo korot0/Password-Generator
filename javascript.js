@@ -29,3 +29,17 @@ function passwords () {
     passTwo.textContent = '';
     generatePasswords();
 }
+
+//Copy on click
+function copyOnClick(field) {
+    if (field === 'one') {
+        navigator.clipboard.writeText(document.getElementById('pass-one').innerText).then(function() {
+            alert('Password copied!')
+        })
+    } else {
+        navigator.clipboard.writeText(document.getElementById('pass-two').innerText).then(function() {
+            alert('Password copied!')
+        })
+    }
+
+}
