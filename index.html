@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -14,20 +16,32 @@
             <div id="sub-header">Never use an insecure password again.</div>
         </div>
         <div id="item-two">
-            <button id="gen-pass-btn" onclick="passwords()">Generate</button>
-            <div id="slider">
-                <input type="range" id="length-input-el" value="15" min="8" max="100">
-                <div>Password Length: <span id="slider-output-el"></span></div>
+            <div id="settings">
+                <div>
+                    <div id="symbols">
+                        <input id="checkbox-s" type="checkbox" onclick="checkBox()">
+                        <label for="checkbox-s">Symbols</label>
+                    </div>
+                    <div id="numbers">
+                        <input id="checkbox-n" type="checkbox" onclick="checkBox()">
+                        <label for="checkbox-n">Numbers</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="range" id="length-input-el" value="15" min="8" max="100">
+                    <div>Password Length: <span id="slider-output-el"></span></div>
+                </div>
             </div>
+            <button id="gen-pass-btn" onclick="passwords()">Generate</button>
         </div>
         <div id="item-three">
             <div class="child">
                 <div id="pass-one"></div>
-                <button onclick="copyOnClick('one')">Copy</button>
+                <button onclick="copyOnClick('one')"><span class="material-icons">content_copy</span></button>
             </div>
             <div class="child">
                 <div id="pass-two"></div>
-                <button onclick="copyOnClick('two')">Copy</button>
+                <button onclick="copyOnClick('two')"><span class="material-icons">content_copy</span></button>
             </div>
         </div>
     </div>

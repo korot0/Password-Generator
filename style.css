@@ -13,14 +13,14 @@ body {
 
 .container {
     width: 550px;
-    height: 550px;
+    height: 600px;
     background: #ECFDF5;
     margin: auto;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 115px 52px;
+    padding: 100px 60px;
     border-radius: 10px;
 }
 
@@ -45,6 +45,12 @@ h1 {
 #item-two {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+}
+
+#settings {
+    display: flex;
+    gap: 30px;
 }
 
 #length-input-el {
@@ -81,6 +87,10 @@ h1 {
     cursor: pointer;
 }
 
+#symbols {
+
+}
+
 #gen-pass-btn {
     border-style: none;
     background: #10B981;
@@ -95,13 +105,18 @@ h1 {
 /* Item three */
 #item-three {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
+}
+
+.child {
+    display: flex;
 }
 
 #pass-one,
 #pass-two {
-    min-width: 210px;
-    min-height: 40px;
     background: #273549;
     border-radius: 6px;
     border-style: none;
@@ -109,4 +124,5 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }

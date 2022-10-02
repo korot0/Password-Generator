@@ -10,7 +10,6 @@ Stretch goals
 <!-- - Ability to set password length (min 8, max 100) -->
 - Add "copy on click" feature
 - Toggle "symbols" and "numbers" on/off
-- Create dark/light theme
 
 //Generate passwords button
 function generatePasswords() {
