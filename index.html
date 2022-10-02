@@ -16,20 +16,20 @@
             <div id="sub-header">Never use an insecure password again.</div>
         </div>
         <div id="item-two">
+            <div class="customize">Customize</div>
             <div id="settings">
                 <div>
-                    <div id="symbols">
-                        <input id="checkbox-s" type="checkbox" onclick="checkBox()">
-                        <label for="checkbox-s">Symbols</label>
+                    <div>Password Length: <span id="slider-output-el"></span>
                     </div>
-                    <div id="numbers">
-                        <input id="checkbox-n" type="checkbox" onclick="checkBox()">
-                        <label for="checkbox-n">Numbers</label>
-                    </div>
-                </div>
-                <div>
                     <input type="range" id="length-input-el" value="15" min="8" max="100">
-                    <div>Password Length: <span id="slider-output-el"></span></div>
+                </div>
+                <div id="symbols">
+                    <input id="checkbox-s" type="checkbox" onclick="checkBox()">
+                    <label for="checkbox-s">Symbols</label>
+                </div>
+                <div id="numbers">
+                    <input id="checkbox-n" type="checkbox" onclick="checkBox()">
+                    <label for="checkbox-n">Numbers</label>
                 </div>
             </div>
             <button id="gen-pass-btn" onclick="passwords()">Generate</button>

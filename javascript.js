@@ -58,5 +58,4 @@ function copyOnClick(field) {
             alert('Password copied!')
         })
     }
-
 }
