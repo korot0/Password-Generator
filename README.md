@@ -8,7 +8,7 @@ Req.
 
 Stretch goals
 <!-- - Ability to set password length (min 8, max 100) -->
-- Add "copy on click" feature
+<!-- - Add "copy on click" feature -->
 - Toggle "symbols" and "numbers" on/off
 
 //Generate passwords button

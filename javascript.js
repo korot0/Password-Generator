@@ -18,12 +18,12 @@ sliderEl.oninput = function() {
 const symbolBox = document.getElementById('checkbox-s');
 const numberBox = document.getElementById('checkbox-n');
 function checkBox() {
-    if (symbolBox.checked) {
-        characters = letters.concat(symbols);
+    if (symbolBox.checked && numberBox.checked) {
+        characters = letters.concat(symbols, numbers);
     } else if (numberBox.checked) {
         characters = letters.concat(numbers);
-    } else if (symbolBox.checked && numberBox.checked) {
-        characters = letters.concat(numbers, symbols);
+    } else if (symbolBox.checked) {
+        characters = letters.concat(symbols);
     } else {
         characters = letters;
     }
