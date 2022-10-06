@@ -7,7 +7,7 @@ const passOne = document.getElementById('pass-one');
 const passTwo = document.getElementById('pass-two');
 
 //Slider password length
-let sliderEl = document.getElementById('length-input-el')
+let sliderEl = document.getElementById('length-input-el');
 let sliderOutputEl = document.getElementById('slider-output-el');
 sliderOutputEl.innerHTML = sliderEl.value;
 sliderEl.oninput = function() {
@@ -17,6 +17,7 @@ sliderEl.oninput = function() {
 //Checkbox input
 const symbolBox = document.getElementById('checkbox-s');
 const numberBox = document.getElementById('checkbox-n');
+
 function checkBox() {
     if (symbolBox.checked && numberBox.checked) {
         characters = letters.concat(symbols, numbers);
@@ -38,6 +39,7 @@ function generatePasswords() {
         passOne.textContent += characters[firstPass];
         passTwo.textContent += characters[secondPass];
     }
+    checkBox()
 }
 
 //Password output fields

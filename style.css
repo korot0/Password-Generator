@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* color palette: https://coolors.co/ebebeb-57548c-000000-66a182-99a7ff */
+
 * {
     box-sizing: border-box;
 }
@@ -9,19 +11,26 @@ body {
     margin: 0;
     background-color: #222222;
     font-family: 'inter';
+    color: #EBEBEB;
 }
 
 .container {
     width: 550px;
     height: 650px;
-    background: #ECFDF5;
+    background: #39375B;
     margin: auto;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 100px 60px;
+    justify-content: space-around;
+    padding: 75px 60px;
     border-radius: 10px;
+}
+
+hr {
+    border: 1px solid #57548C;
+    border-radius: 50px;
+    width: 100%;
 }
 
 /* Item one */
@@ -32,6 +41,11 @@ h1 {
     letter-spacing: -0.05em;
     margin: 0;
     margin-bottom: 10px;
+
+}
+
+#h1-secondary-color {
+    color: #99A7FF;
 }
 
 .customize {
@@ -45,7 +59,7 @@ h1 {
 #sub-header {
     font-weight: 400;
     font-size: 20px;
-    color: #6B7280;
+    color: #b8b8b8;
 }
 
 /* Item two */
@@ -65,7 +79,7 @@ h1 {
     width: 160px;
     height: 15px;
     border-radius: 5px;
-    background: #d3d3d3;
+    background: #b8b8b8;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -83,7 +97,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #99A7FF;
     cursor: pointer;
 }
 
@@ -91,13 +105,13 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #99A7FF;
     cursor: pointer;
 }
 
 #gen-pass-btn {
     border-style: none;
-    background: #10B981;
+    background: #99A7FF;
     color: white;
     border-radius: 6px;
     width: 160px;
@@ -121,7 +135,7 @@ h1 {
 
 #pass-one,
 #pass-two {
-    background: #273549;
+    background: #57548C;
     border-radius: 6px;
     border-style: none;
     color: white;
