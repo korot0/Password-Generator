@@ -31,3 +31,5 @@ function generatePasswords() {
 <output>15</output> --> Displays the value of slider
 
 <!-- <input type="number" id="length-input-el" placeholder="Password Length" value="15" min="8" max="100"> -->
+
+![image](https://user-images.githubusercontent.com/108902180/204414555-10e28eef-1e36-40a6-97a2-43cf8cfabc40.png)
