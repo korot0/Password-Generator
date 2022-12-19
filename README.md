@@ -1,5 +1,5 @@
 # Password-Generator
-This app creates generates strong passwords.
+This app generates strong passwords.
 
 Req.
 
